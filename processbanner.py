@@ -61,10 +61,10 @@ else:
 	file8.close()
 	file9.close()
 	targetfile = open('badips.txt','r')
-	poopoo = sorted(set(targetfile.readlines()))
+	readsorted = sorted(set(targetfile.readlines()))
 	targetfile.close()
 	#file10 = open('badips.txt','r')
-	for ban in poopoo:
+	for ban in readsorted:
 		ban = ban.strip()
 		command = "netsh advfirewall firewall add rule name=\"Banned " + ban + "\" action=block dir=in remoteip=" + ban
 		os.system(command)

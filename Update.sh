@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Server Update Script
-# Author: Christopher Truncer @christruncer
-# Date: 3/11/2013
+# This was basically taken from @TheMightyShiv
+# Check out his stuff, great developer
 
 # Get rid of everything on the console
 clear
 
 # Title Screen
 echo '******************************************************'
-echo "* Update.sh | Christophertruncer.com | `hostname -f` *"
+echo "* Update.sh |     Update Script      | `hostname -f` *"
 echo '******************************************************'
 
 # Let's get the latest packages

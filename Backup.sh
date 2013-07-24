@@ -4,7 +4,6 @@
 # Description:Script to backup system configs. Taken from @themightyshiv
 #############################################################################
 
-
 # Global Variables
 var_host=`hostname`
 var_date=`date +%m.%d.%Y`
@@ -12,6 +11,7 @@ var_bdir='<directories to backup delimited by a space without a trailing slash>'
 var_sdir='<directory to backup to>'
 var_pusr='<user to own the backup>'
 var_pgrp='<group to own the backup>'
+
 # Directory to exclude from backup
 var_excl='--exclude=/backups/*'
 

@@ -14,12 +14,13 @@ echo '******************************************************'
 
 # Let's get the latest packages
 apt-get update
+apt-get upgrade -y
 
 # And now install package updates & dependencies apt knows about
-apt-get dist-upgrade
+apt-get dist-upgrade -y
 
 # Remove the junk I don't need
-apt-get --purge autoremove
+apt-get --purge autoremove -y
 
 # Clean up installed packages
 apt-get clean
